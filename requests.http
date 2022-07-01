@@ -1,0 +1,27 @@
+### songs index 
+GET http://localhost:3000/songs.json
+
+### songs create 
+POST http://localhost:3000/songs.json
+Content-Type: application/json
+
+{
+  "title": "test song",
+  "album": "test album",
+  "artist": "test artist",
+  "year": 2022
+}
+
+###songs show
+GET http://localhost:3000/songs/1.json
+
+### songs update
+PATCH http://localhost:3000/songs/1.json
+Content-Type: application/json
+
+{
+  "year": 2022
+}
+
+### songs destroy 
+DELETE http://localhost:3000/songs/1.json
